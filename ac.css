@@ -1,0 +1,13 @@
+h3{
+    color: white; 
+    text-align: center;
+ width: 500px;
+}
+table, form{
+    display: flex;
+    justify-content: center;
+
+    background-color: aqua;
+    margin-left:30% ;
+    margin-right:30% ;
+}

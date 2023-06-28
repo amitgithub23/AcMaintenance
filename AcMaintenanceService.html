@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AC Maintenance Services</title>
+    <link rel="stylesheet" href="./ac.css">
+</head>
+<body>
+    <form action="">
+        <div id="form">
+        <h3 style="background-color: red;"> <b> AC Maintenance Services </b> </h3> 
+       
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                       Customer Name
+                    </td>
+                    <td>
+                        <input type="text" id="name" placeholder="Username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ph">Mobile Number</label>
+                    </td>
+                        <td>
+                        <input type="tel" placeholder="Mobile Number" id="ph">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="add">Address</label>
+                    </td>
+                        <td>
+
+                    
+                       <textarea name="" id="add" cols="30" rows="10" placeholder="Enter Address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="type">AC Type</label>
+                      </td>
+                      <td>
+                        <select name="AC types" id="">
+                            <option  value="Select one" >Select one</option>
+                            <option class="act" value="window" selected>window</option>
+                            <option class="act" value="split">split</option>
+                        </select>
+                      </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                     Service type
+                    </td>
+                    <td>
+                        
+                        <input type="checkbox" name="cleaning" class="types" value="500" id="">
+                        <label for="">Cleaning</label>
+                        <input type="checkbox" name="repair" class="types" value="1500">
+                        <label for="">Repair</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" class="types" value="2500">
+                        <label for="">Gas Refill</label>
+                        <input type="checkbox" name="" class="types" value="250">
+                        <label for="">Relocation</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" class="types" value="750">
+                        <label for="">Filter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <label for="dat">Date for Appointment</label> 
+                    </td>
+                    <td>
+                        <input type="date" id="dat">
+                    </td>
+                </tr>
+                <tr>
+                   <td rowspan="2">
+                    Yearly Maintenance
+                   </td>
+                   <td>
+                    <input type="checkbox" name="maintenance" id="maintenance" value="1500">
+                    <label for="">Filter</label>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                       <button type="submit" onclick="bookAppointment()">Submit</button>
+                       <button type="reset">Clear</button>
+                       
+
+                    </td>
+                </tr>
+              
+            </tbody>
+          
+
+            
+        </table> 
+        <p id="answer"></p>
+        <p id="answer1"></p> </div>
+    </form>
+  
+    <script src="./script.js"></script>
+
+</body>
+</html>
